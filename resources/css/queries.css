@@ -52,7 +52,31 @@
     width: 100%;
     margin: 0 0 4% 0;
   }
-  .main-navs{display: none;}
+  /* .main-navs{display: none;} */
+  .mobile-nav-icon {
+    display: inline-block;
+  }
+  .main-navs {
+    float:left;
+    margin-top: 30px;
+    margin-left: 25px;
+  }
+  .main-navs li { display: block; }
+  .main-navs li a:link,
+  .main-navs li a:visited {
+    display: block;
+    border: 0;
+    padding: 10px 0;
+    font-size: 100%;
+  }
+
+  .sticky .main-nav {margin-top: 18px;}
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #555;
+  }
+
 
   .steps-box:first-child {text-align: center;}
   .app-screen {width: 50%;}

@@ -39,6 +39,16 @@ header {
   margin-top: 10px;
 }
 
+.logo-black {
+  height: 70px;
+  width: auto;
+  float: left;
+  margin-top: 5px 0;
+  display: none;
+}
+
+/* MAIN NAVS */
+
 .main-navs {
   float: right;
   margin-top: 50px;
@@ -65,6 +75,44 @@ header {
 .main-navs li a:active {
   border-bottom: 2px solid #e67e22;
 }
+
+.main-navs {
+  margin-top: 30px;
+}
+
+/*-------Mobile NAV---------*/
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: #fff; 
+}
+
+/* Sticky navi */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f1efef;
+  -webkit-box-shadow: 0 2px 2px rgb(255, 255, 255,0.98);
+          box-shadow: 0 2px 2px rgb(255, 255, 255,0.98);
+  z-index: 9999;
+}
+
+.sticky .main-navs li a:link,
+.sticky .main-navs li a:visited {
+  color: #dad4d4;
+  padding: 16px 0;
+  color: #000;
+}
+
+.sticky .logo {display: none;}
+.sticky .logo-black { display: block;}
 
 
 /* --------------------------------------- */
@@ -221,6 +269,7 @@ input[type=submit] {
 input[type=submit]:hover,
 input[type=submit]:active {
   background-color: #cf6d17;
+  border: 1px solid #e67e22;
 }
 .btn-full:hover,
 .btn-full:active{
@@ -544,4 +593,18 @@ footer p {
   color: #888;
   margin-top: 30px;
 
+}
+
+.js--wp-1 .js--wp-2 .js--wp-3{
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+.js--wp-4 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.js--wp-1 .animate .js--wp-2 .js--wp-3{
+  opacity: 1;
 }
